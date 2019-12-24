@@ -61,9 +61,10 @@ for ($compteur = 1; $compteur < 8 - date("N"); $compteur++) {        // Boucle f
         if ($compteur == date("d")) {              // si $i est égale à date (31) alors ... affiche le jour d'aujourd'hui
             echo '<li><span class="active">' . $Tableau[$compteur] . '</span>';
 
-        } else {                                // affiche le jour et la ligne
+        } else
+            {                                               // affiche le jour et la ligne en gris
             echo '<li>';
-            echo $Tableau[$compteur];
+            echo '<span class="gris">' . $Tableau[$compteur] . '</span>';
         }
 
 

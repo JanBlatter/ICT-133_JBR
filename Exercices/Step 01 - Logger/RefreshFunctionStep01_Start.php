@@ -43,19 +43,25 @@ function setFullPath($fName)
 
 /**
  * This function is designed to write a string message in a file.
- * -The opening and closing action is managed by the fuction
+ * -The opening and closing action is managed by the function
  * @param $fileFullPath : The path containing expressing the path from the root to the filename
  * @param $lineToWrite : Is the content to write in the file.
  * @param $erase : Is an option allowing to erase the file before writing or happening the $lineToWrite a the end of the file
  */
 function writeMsgInFile($fileFullPath, $lineToWrite, $erase){
-    $myfile = fopen($fileFullPath, "w");
+    if ($erase){
+        $mode = 'w+';
+    }
+    else{
+        $mode = 'a+';
+    }
+    $myfile = fopen($fileFullPath, $mode);
     fwrite($myfile, $lineToWrite);
     fclose($myfile);
 
 
-}
 
+}
 
 
 //</editor-fold>

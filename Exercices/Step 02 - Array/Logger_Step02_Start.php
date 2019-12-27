@@ -19,7 +19,7 @@ writeMsgInFile($fileFullPath, $logHeader, true);
 
 //http://php.net/manual/en/language.types.array.php
 $testValues = array(
-    "1" => array(1,"This is an info"),
+    "1" => array(1,"This is an info",),
     "2" => array(2, "This a warning"),
     "3" => array(3, "This an error"),
     "4" => array(24, "This an unknown"),
@@ -31,6 +31,8 @@ foreach ($testValues as $msg)
 {
     //TODO - a good place to prepare the message
     writeMsgInFile($fileFullPath, $msg[1], false);
+
+
 }
 //</editor-fold>
 

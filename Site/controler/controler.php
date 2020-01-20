@@ -49,6 +49,20 @@ function logout(){
 
 function register(){
 
+
+    $fileJson="model/fichier.json";         /*chemin du fichier json*/
+
+    $data=array(                            /*tableau $data où l'encodement de json travaille*/
+        $username=@$_POST["username"],
+        $password=@$_POST["password"],
+    );
+
+    $encode=json_encode($data);                         /* encode les données du tableau $data*/
+
+    file_put_contents($fileJson,$encode);                   /* met le contenu du fichier dans le fichier.*/
+
+    require"view/register.php";
+
 }
 
 

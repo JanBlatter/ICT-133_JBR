@@ -10,6 +10,7 @@ $titre="Rent  A Snow - Accueil"
 ?>
 <form class="form" method="POST" action="index.php?action=login">
     <br>
+    <h1> Login </h1>
     <b>Username:</b><br>
     <input  type="email" name="username" value="" placeholder="username" required>
     <br>

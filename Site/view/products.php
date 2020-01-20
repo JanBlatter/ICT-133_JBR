@@ -6,7 +6,9 @@
  */
 // tampon de flux stocké en mémoire
 ob_start();
-$titre="Rent  A Snow - Accueil"
+$titre="Rent  A Snow - Accueil";
+
+$decode= json_decode("model/fichier.json");
 ?>
    <table>
 

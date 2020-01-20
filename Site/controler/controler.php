@@ -67,6 +67,7 @@ function register(){
 
 
 function products(){
+
     require"view/products.php";
 }
 

@@ -8,8 +8,8 @@
 
 /**
  * Cette fonction permet de checker si le mot de passe et l'utilisateur sont corrects
- * @param $motdepasse : variable en praramètre
- * @param $utilisateur : variable en praramètre
+ * @param $motdepasse : variable avec données en praramètre
+ * @param $utilisateur : variable avec données en praramètre
  * @return bool
  *
  */

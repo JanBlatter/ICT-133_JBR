@@ -3,6 +3,7 @@
  * 133-Start - gabarit.php
  * User: Jan.BLATTER
  * Date: 16.12.2019
+
 -->
 <html>
 <head>
@@ -73,17 +74,16 @@
                         </button>
                         <div class="nav-collapse collapse">
                             <ul class="nav nav-pills ddmenu">
-                                <li <?php if (($_GET['action']=="home") || (!isset($_GET['action']))) :?>          <!-- Si l'utilisateur est sur la page home ou  ou si 'action' est activé alors , la class ''active'' est activé.-->
+                                <li <?php if (($_GET['action']=="home") || (!isset($_GET['action']))) :?>
                                 class="active"
                                 <?php endif ?>>
                              <a href="index.php?action=home">Accueil</a>
-                                <li <?php if ($_GET['action']=="login") :?>                                         <!--Si l'utilisateur est sur la page Login, la class '' active '' s'active *// -->
+                                <li <?php if ($_GET['action']=="login") :?>
                                     class="active"
                                     <?php endif ?>>
                                 <a href="index.php?action=login">Login</a>
                                     <?=@$_SESSION['login'];?></li>
                                 <li <?php if($_GET['action']=="Welcome" || isset ($_SESSION['login'])):?> style="display:"<?php else :?> style="display:none"  <?php endif ?>><a href="index.php?action=logout">Logout</a>
-                                    <!-- Si l'utilisateur est sur la page Welcome ou la varaible session est activé *//-->
 
                                 </li>
                                <li><a href="index.php?action=home">Produits</a>

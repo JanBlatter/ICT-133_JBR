@@ -4,3 +4,5 @@
  * User: Jan.BLATTER
  * Date: 20.01.2020
  */
+
+ob_start();

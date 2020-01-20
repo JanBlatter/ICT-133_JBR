@@ -22,6 +22,9 @@ if (isset($_GET['action'])){            /* Si action est activé , alors va sur 
         case 'logout':
             logout();
             break;
+        case 'register':
+            register();
+            break;
 
         default:
             home();

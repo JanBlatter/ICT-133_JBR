@@ -17,7 +17,7 @@ function checkLogin($motdepasse,$utilisateur)
 {
 
 
-    if ($motdepasse == 1234 && $utilisateur == "Jan@cpnv.ch") {         /* si */
+    if ($motdepasse == 1234 && $utilisateur == "Jan@cpnv.ch") {         /* si le mot de passe et l'utilisateur sibt correctes. retourne Vrai */
         return true;
     } else
         return false;

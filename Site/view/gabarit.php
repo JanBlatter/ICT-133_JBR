@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <!--
- * 133-Start - gabarit.php
+ * ICT-133_JBR - gabarit.php
  * User: Jan.BLATTER
  * Date: 16.12.2019
 
@@ -83,8 +83,11 @@
                                     <?php endif ?>>
                                 <a href="index.php?action=login">Login</a>
                                     <?=@$_SESSION['login'];?></li>
-                                <li <?php if($_GET['action']=="Welcome" || isset ($_SESSION['login'])):?> style="display:"<?php else :?> style="display:none"  <?php endif ?>><a href="index.php?action=logout">Logout</a>
-
+                                <li <?php if($_GET['action']=="Welcome" || isset ($_SESSION['login'])):?> style="display:"<?php else :?> style="display:none"  <?php endif ?>><a href="index.php?action=logout">Logout</a></li>  <!-- Si l'utilisateur est connecté, cache '' Login '' -->
+                                <li <?php if ($_GET['action']=="register") :?>
+                                class="active"
+                                <?php endif ?>>
+                                    <a href="index.php?action=register">Register</a>
                                 </li>
                                <li><a href="index.php?action=home">Produits</a>
 

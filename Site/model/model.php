@@ -1,6 +1,6 @@
 <?php
 /**
- * ICT_133_JBR_new - model.php
+ * ICT-133_JBR - model.php
  * User: Jan.BLATTER
  * Date: 13.01.2020
  */

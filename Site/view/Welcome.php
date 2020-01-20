@@ -4,7 +4,7 @@
  * User: Janbl
  * Date: 13.01.2020
  */
-// tampon de flux stocké en mémoire
+
 ob_start();
 $titre="Rent  A Snow - Accueil";
 

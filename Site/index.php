@@ -7,9 +7,9 @@
 
 require "controler/controler.php";
 
-if (isset($_GET['action'])){
+if (isset($_GET['action'])){            /* Si action est activé , alors va sur une des cases en fonction de l'utilisateur  */
     $action=$_GET['action'];
-    switch ($action){
+    switch ($action){                       /* Switch qui permet d'aller vers une page en fonction de l'action */
         case 'home' :
             home();
             break;
@@ -17,7 +17,7 @@ if (isset($_GET['action'])){
             login(@$_POST);
             break;
             case 'contact':
-                contacte();
+                contact();
             break;
         case 'logout':
             logout();

@@ -25,6 +25,9 @@ if (isset($_GET['action'])){            /* Si action est activé , alors va sur 
         case 'register':
             register();
             break;
+        case 'products':
+            products();
+            break;
 
         default:
             home();

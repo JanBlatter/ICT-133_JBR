@@ -4,13 +4,13 @@
  * User: Jan.BLATTER
  * Date: 20.01.2020
  */
-
+// tampon de flux stocké en mémoire
 ob_start();
 $titre="Rent  A Snow - Accueil"
 ?>
 <form class="form" method="POST" action="index.php?action=register">
     <br>
-    <h1> Register </h1>
+    <h1> Création d'un compte </h1>
     <b>Username:</b><br>
     <input  type="email" name="username" value="" placeholder="username" required>
     <br>

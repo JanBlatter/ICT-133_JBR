@@ -90,11 +90,12 @@
                                 <?php endif ?>>
                                     <a href="index.php?action=register">Register</a>
                                 </li>
-                               <li><a href="index.php?action=home">Produits</a>
+                                <li <?php if ($_GET['action']=="products") :?>
+                                    class="active"
+                                <?php endif ?>>
+                                    <a href="index.php?action=products">Produits</a>
+                                </li>
 
-
-
-                            </li>
 
                             </ul>
                         </div>

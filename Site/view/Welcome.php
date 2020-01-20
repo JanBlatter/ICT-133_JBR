@@ -8,6 +8,7 @@
 ob_start();
 $titre="Rent  A Snow - Accueil";
 
+echo "<br>";
 echo "Bienvenue , vous êtes actuellement connecté.";
 
 $content = ob_get_clean();

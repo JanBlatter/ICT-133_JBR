@@ -104,8 +104,9 @@ Un contrat sera signé à chaque location. D'autre part nous travaillons en étr
                             </div>
                         </div>    </div>
 
-
+</div>
                 </div>
+
 <?php
 $content = ob_get_clean();
 require "gabarit.php";

@@ -4,9 +4,9 @@
  * User: Jan.BLATTER
  * Date: 16.12.2019
  */
-session_start();
+session_start();   // activation de la session.
 
-require "model/model.php";
+require "model/model.php";  // appelle le fichier model, le fichier model est requis.
 
 
 /**
@@ -29,7 +29,7 @@ function login($POST){
 
     if (!isset ($_SESSION['login'])) {      /** si la session login est activé alors ... */
         if (checkLogin($password, $username)) {          /** Si la fonction checklogin est correct , va sur la page welcome.php */
-            require "view/Welcome.php";
+            require "view/Welcome.php";                             /** appele la page welcome.php , la page welcome est requise*/
             $_SESSION['login'] = $username;                          /** récupération des données de Session */
             $_GET['action']="Welcome";                               /** récupération des données du GET */
         } else
@@ -40,17 +40,22 @@ function login($POST){
         require "view/Welcome.php";                              /** sinon va sur welcome.php */
     }
 }
-
+/**
+ *Cette fonction permet de détruire la session
+ */
 function logout(){
     session_unset();
     session_destroy();
     require"view/login.php";
 }
 
+/**
+ * Cette fonction récupère les données écris par l'utilisateur pour encore les encoder et transporte vers l'autre page.
+ */
 function register(){
 
 
-    $fileJson="model/fichier.json";         /*chemin du fichier json*/
+    $fileJson="model/snows.json";         /*chemin du fichier json*/
 
     $data=array(                            /*tableau $data où l'encodement de json travaille*/
         $username=@$_POST["username"],
@@ -59,13 +64,15 @@ function register(){
 
     $encode=json_encode($data);                         /* encode les données du tableau $data*/
 
-    file_put_contents($fileJson,$encode);                   /* met le contenu du fichier dans le fichier.*/
+    file_put_contents($fileJson,$encode);                   /* met le contenu du fichier dans le fichier json.*/
 
     require"view/register.php";
 
 }
 
-
+/**
+ *Cette fonction permet d'aller sur la page products.
+ */
 function products(){
 
     require"view/products.php";

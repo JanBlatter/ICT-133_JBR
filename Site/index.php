@@ -16,9 +16,6 @@ if (isset($_GET['action'])){            /* Si action est activé , alors va sur 
             case 'login':
             login(@$_POST);
             break;
-            case 'contact':
-                contact();
-            break;
         case 'logout':
             logout();
             break;

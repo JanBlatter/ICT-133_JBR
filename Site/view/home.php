@@ -108,5 +108,5 @@ Un contrat sera signé à chaque location. D'autre part nous travaillons en étr
                 </div>
 
 <?php
-$content = ob_get_clean();
-require "gabarit.php";
+$content = ob_get_clean();   //efface la mémoire tampon dans la variable $content
+require "gabarit.php"; // Appele le fichier. gabarit.php est requis pour que ça marche.

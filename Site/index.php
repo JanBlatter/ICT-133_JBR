@@ -5,7 +5,7 @@
  * Date: 16.12.2019
  */
 
-require "controler/controler.php";
+require "controler/controler.php";              /*va sur la page controler.php , la page est requise. */
 
 if (isset($_GET['action'])){            /* Si action est activé , alors va sur une des cases en fonction de l'utilisateur  */
     $action=$_GET['action'];

@@ -46,7 +46,7 @@ function login($POST){
 function logout(){
     session_unset();
     session_destroy();
-    require"view/login.php";
+    require"view/login.php";                    // Appele le fichier. login.php est requis pour que ça marche.
 }
 
 /**
@@ -66,7 +66,7 @@ function register(){
 
     file_put_contents($fileJson,$encode);                   /* met le contenu du fichier dans le fichier json.*/
 
-    require"view/register.php";
+    require"view/register.php";                         /* Appele le fichier. register.php est requis pour que ça marche. */
 
 }
 
@@ -75,7 +75,7 @@ function register(){
  */
 function products(){
 
-    require"view/products.php";
+    require"view/products.php";    // Appele le fichier. products.php est requis pour que ça marche.
 }
 
 

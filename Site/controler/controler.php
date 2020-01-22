@@ -55,7 +55,7 @@ function logout(){
 function register(){
 
 
-    $fileJson="model/snows.json";         /*chemin du fichier json*/
+    $fileJson="model/register.json";         /*chemin du fichier json*/
 
     $data=array(                            /*tableau $data où l'encodement de json travaille*/
         $username=@$_POST["username"],
